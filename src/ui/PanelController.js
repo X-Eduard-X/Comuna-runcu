@@ -215,6 +215,11 @@ export class PanelController {
     // Hero Image with Ken Burns effect (only if photo exists)
     let heroHtml = '';
     if (heroPhoto) {
+      const isPortrait =
+        heroPhoto.width &&
+        heroPhoto.height &&
+        heroPhoto.height > heroPhoto.width * 1.15;
+
       const avifSource = heroPhoto.srcsetAvif
         ? `<source type="image/avif" srcset="${heroPhoto.srcsetAvif}" sizes="(max-width: 960px) 94vw, 440px">`
         : '';
@@ -224,12 +229,16 @@ export class PanelController {
 
       heroHtml = `
         <div class="detail-hero stagger-item">
-          <div class="detail-hero__frame" id="detail-hero-trigger" role="button" tabindex="0" aria-label="Deschide imaginea pe tot ecranul">
+          <div class="detail-hero__frame ${
+            isPortrait ? 'detail-hero__frame--portrait' : ''
+          }" id="detail-hero-trigger" role="button" tabindex="0" aria-label="Deschide imaginea pe tot ecranul">
             <picture>
               ${avifSource}
               ${webpSource}
               <img
-                class="detail-hero__img ken-burns-img"
+                class="detail-hero__img ken-burns-img ${
+                  isPortrait ? 'detail-hero__img--portrait' : ''
+                }"
                 src="${heroPhoto.src || heroPhoto.fallback}"
                 alt="${heroPhoto.alt || ''}"
                 width="${heroPhoto.width || 1600}"

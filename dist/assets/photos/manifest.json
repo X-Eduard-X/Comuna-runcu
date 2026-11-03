@@ -216,20 +216,29 @@
     "outputExifStripped": true
   },
   {
-    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM(1).jpeg",
+    "inboxFile": "Maria-Apostol/01-portret-maria-apostol.jpg",
     "targetFolder": "c-personalitate-locala",
-    "baseName": "01-festivalul-maria-apostol-runcu",
-    "width": 1600,
-    "height": 1200,
+    "baseName": "01-portret-maria-apostol",
+    "width": 602,
+    "height": 953,
     "hadInputExif": false,
     "outputExifStripped": true
   },
   {
-    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM.jpeg",
+    "inboxFile": "Maria-Apostol/02-monument-maria-apostol-bujori.jpg",
     "targetFolder": "c-personalitate-locala",
-    "baseName": "02-monument-maria-apostol-runcu",
-    "width": 1536,
-    "height": 2048,
+    "baseName": "02-monument-maria-apostol-bujori",
+    "width": 768,
+    "height": 1024,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM(1).jpeg",
+    "targetFolder": "c-personalitate-locala",
+    "baseName": "03-festivalul-maria-apostol-runcu",
+    "width": 1600,
+    "height": 1200,
     "hadInputExif": false,
     "outputExifStripped": true
   },

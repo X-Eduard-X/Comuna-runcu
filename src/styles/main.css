@@ -1733,11 +1733,20 @@ body.is-hud-hidden .hud-element {
   cursor: zoom-in;
 }
 
+.detail-hero__frame--portrait {
+  aspect-ratio: 4 / 3.8;
+}
+
 .detail-hero__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
+}
+
+.detail-hero__img--portrait {
+  object-position: center 14%;
 }
 
 .ken-burns-img {

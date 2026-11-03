@@ -155,16 +155,21 @@ const PHOTO_MAPPING = [
     baseName: '02-carnati-afumaturi-casa'
   },
 
-  // Cat. C — Maria Apostol (1954–1993) și Festivalul-Concurs Național din Runcu (2 photos)
+  // Cat. C — Maria Apostol (1954–1993): portret de copertă, monument memorial cu bujori și festival (3 photos)
+  {
+    inboxFile: path.join('Maria-Apostol', '01-portret-maria-apostol.jpg'),
+    targetFolder: 'c-personalitate-locala',
+    baseName: '01-portret-maria-apostol'
+  },
+  {
+    inboxFile: path.join('Maria-Apostol', '02-monument-maria-apostol-bujori.jpg'),
+    targetFolder: 'c-personalitate-locala',
+    baseName: '02-monument-maria-apostol-bujori'
+  },
   {
     inboxFile: path.join('Traditi', 'WhatsApp Image 2026-11-03 at 3.09.37 PM(1).jpeg'),
     targetFolder: 'c-personalitate-locala',
-    baseName: '01-festivalul-maria-apostol-runcu'
-  },
-  {
-    inboxFile: path.join('Traditi', 'WhatsApp Image 2026-11-03 at 3.09.37 PM.jpeg'),
-    targetFolder: 'c-personalitate-locala',
-    baseName: '02-monument-maria-apostol-runcu'
+    baseName: '03-festivalul-maria-apostol-runcu'
   },
 
   // Cat. D — Arhivă etnografică: viața satului de altădată (4 photos)
