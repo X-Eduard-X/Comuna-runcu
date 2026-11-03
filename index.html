@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Hartă digitală interactivă pentru descoperirea patrimoniului natural, cultural și comunitar al comunei Runcu, județul Gorj — Proiectul Lider European 2026."
+    />
+    <meta name="theme-color" content="#0A0E0D" />
+    <title>Comuna Runcu, Jud. Gorj — Hartă Interactivă | Lider European 2026</title>
+
+    <!-- Google Fonts with full Romanian diacritics (latin-ext: ă â î ș ț) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Critical First-Paint CSS: prevents any FOUC on slow network / 4x CPU throttling before JS & external bundles load -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #0a0e0d;
+        color: #f5f3ee;
+      }
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: grid;
+        place-items: center;
+        background-color: #0a0e0d;
+      }
+      .intro-screen,
+      .reveal-word__inner,
+      .intro-stagger,
+      .intro-visual-card {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .intro-screen {
+        pointer-events: none;
+      }
+      .reveal-word__inner {
+        transform: translate3d(0, 115%, 0) rotateZ(2deg);
+      }
+      .intro-stagger {
+        transform: translate3d(0, 22px, 0);
+      }
+      .intro-visual-card {
+        transform: translate3d(0, 32px, 0) scale(0.94);
+      }
+    </style>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <!-- 1. LOADING SCREEN (Real Progress) -->
+    <div id="loading-screen" class="loading-screen" role="status" aria-live="polite">
+      <div class="loading-screen__inner">
+        <div class="loading-brand-pill">
+          <span class="eu-stars-badge" aria-hidden="true">★</span>
+          <span>Lider European 2026 • Județul Gorj</span>
+        </div>
+        <h1 class="loading-title">Comuna Runcu</h1>
+        <p class="loading-subtitle">Patrimoniu viu, natură și memorie comunitară</p>
+
+        <div class="loading-progress-wrap">
+          <div class="loading-bar-track">
+            <div id="loading-bar-fill" class="loading-bar-fill" style="width: 8%"></div>
+          </div>
+          <div class="loading-meta-row">
+            <span id="loading-status-text" class="loading-status-text">
+              Se inițializează experiența cartografică...
+            </span>
+            <span id="loading-percentage" class="loading-percentage">8%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. INTRO SCREEN (Fullscreen Cinematic Cover over 3D Map) -->
+    <section
+      id="intro-screen"
+      class="intro-screen"
+      aria-label="Introducere: Călătorie ghidată prin Comuna Runcu, Județul Gorj"
+    >
+      <!-- Cinematic photographic backdrop (Vârful Arcanu — crestele Vâlcanului) -->
+      <div class="intro-hero-bg" aria-hidden="true">
+        <img
+          id="intro-hero-bg-img"
+          class="intro-hero-bg__img"
+          src="assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-1600w.webp"
+          alt=""
+          width="1600"
+          height="663"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="intro-hero-bg__shade"></div>
+        <div class="intro-hero-bg__vignette"></div>
+        <div class="intro-hero-bg__grain"></div>
+      </div>
+
+      <!-- Top Bar: official logos only -->
+      <header class="intro-topbar intro-stagger">
+        <div class="intro-logos" aria-label="Logo-uri proiect și parteneri">
+          <img
+            src="assets/photos/logos/lider-european-2026.webp"
+            alt="Lider European 2026"
+            title="Lider European 2026"
+            class="intro-logo intro-logo--lider"
+            width="52"
+            height="52"
+            decoding="async"
+          />
+          <span class="intro-logos__divider" aria-hidden="true"></span>
+          <img
+            src="assets/photos/logos/stema-comuna-runcu.webp"
+            alt="Stema Comunei Runcu, Județul Gorj"
+            title="Comuna Runcu, Județul Gorj"
+            class="intro-logo intro-logo--crest"
+            width="43"
+            height="56"
+            decoding="async"
+          />
+          <span class="intro-logos__divider" aria-hidden="true"></span>
+          <img
+            src="assets/photos/logos/liceul-tehnologic-balta.webp"
+            alt="Liceul Tehnologic „G-ral C-tin Șandru” Bâlta – Runcu"
+            title="Liceul Tehnologic „G-ral C-tin Șandru” Bâlta – Runcu"
+            class="intro-logo intro-logo--school"
+            width="54"
+            height="54"
+            decoding="async"
+          />
+        </div>
+
+        <div class="intro-topbar__actions">
+          <button
+            type="button"
+            class="btn-glass-pill btn-toggle-sound"
+            aria-label="Activează sau dezactivează sunetele tactile"
+            title="Sunet interfață (Activat)"
+          >
+            <svg class="sound-icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <svg class="sound-icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <span>Sunet</span>
+          </button>
+          <button
+            type="button"
+            class="btn-glass-pill"
+            data-open-modal="qr"
+            aria-label="Afișează codul QR pentru scanare"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
+            <span>Scanează QR</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Intro Grid -->
+      <div class="intro-main-grid">
+        <div class="intro-copy-col">
+          <div class="intro-eyebrow intro-stagger">
+            <span class="intro-eyebrow__rule" aria-hidden="true"></span>
+            <span class="intro-eyebrow__text">Lider European 2026 &nbsp;·&nbsp; Județul Gorj</span>
+          </div>
+
+          <h2 class="intro-headline" aria-label="Călătorie ghidată prin inima comunei Runcu">
+            <span class="reveal-word"><span class="reveal-word__inner">Călătorie</span></span>
+            <span class="reveal-word"><span class="reveal-word__inner">ghidată</span></span>
+            <span class="reveal-word"><span class="reveal-word__inner">prin</span></span>
+            <span class="reveal-word"><span class="reveal-word__inner">inima</span></span>
+            <span class="reveal-word"><span class="reveal-word__inner accent-serif">comunei Runcu</span></span>
+          </h2>
+
+          <p class="intro-lead intro-stagger">
+            O hartă 3D interactivă a locurilor, tradițiilor, oamenilor și poveștilor care dau identitate comunei <strong>Runcu, județul Gorj</strong> — de la Cheile Sohodolului până pe crestele Vâlcanului.
+          </p>
+
+          <div class="intro-cta-group intro-stagger">
+            <button type="button" id="btn-enter-map" class="btn-primary-cta">
+              <span>Începe călătoria</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </button>
+
+            <button type="button" id="btn-intro-tour" class="btn-secondary-cta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Tur ghidat</span>
+            </button>
+          </div>
+
+          <!-- Key figures -->
+          <dl class="intro-stats intro-stagger" aria-label="Harta în cifre">
+            <div class="intro-stat">
+              <dt>Puncte de interes</dt>
+              <dd id="intro-stat-points">12</dd>
+            </div>
+            <div class="intro-stat">
+              <dt>Fotografii</dt>
+              <dd id="intro-stat-photos">30</dd>
+            </div>
+            <div class="intro-stat">
+              <dt>Sate</dt>
+              <dd>7</dd>
+            </div>
+            <div class="intro-stat">
+              <dt>Categorii</dt>
+              <dd>4</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Cover Photo Card (5.jpg: totemul „Runcu — Bine ați venit!”) -->
+        <div class="intro-visual-col">
+          <div class="intro-visual-card">
+            <div id="intro-cover-frame" class="intro-cover-frame"></div>
+            <div class="intro-visual-card__caption">
+              <div>
+                <span class="caption-tag">Poarta de intrare în comună</span>
+                <strong>Runcu, Județul Gorj</strong>
+              </div>
+              <span class="caption-coords">45.1192° N<br />23.1423° E</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer strip: categories + team credit -->
+      <footer class="intro-footer intro-stagger">
+        <ul class="intro-categories-preview" aria-label="Cele 4 categorii ale hărții">
+          <li class="intro-cat-item"><span class="intro-cat-dot" style="background: var(--cat-a)"></span><strong>Obiective turistice</strong></li>
+          <li class="intro-cat-item"><span class="intro-cat-dot" style="background: var(--cat-b)"></span><strong>Tradiții și obiceiuri</strong></li>
+          <li class="intro-cat-item"><span class="intro-cat-dot" style="background: var(--cat-c)"></span><strong>Personalități locale</strong></li>
+          <li class="intro-cat-item"><span class="intro-cat-dot" style="background: var(--cat-d)"></span><strong>Poveștile comunității</strong></li>
+        </ul>
+        <p class="intro-credit">
+          Realizat de <strong>Sacagiu Eduard, Denisa Caramete, Ana Udroiu și Alex Stoika</strong>
+          <span class="intro-credit__sep" aria-hidden="true">·</span>
+          Coordonator: <strong>prof. Popescu Flori</strong>
+        </p>
+      </footer>
+    </section>
+
+    <!-- 3. INTERACTIVE 3D MAP WORKSPACE -->
+    <main class="app-workspace" id="app-workspace">
+      <div
+        id="map-canvas"
+        class="map-canvas"
+        role="application"
+        aria-label="Harta interactivă 3D a comunei Runcu, județul Gorj"
+      ></div>
+
+      <!-- Restore UI button when Clean HUD (H key) is active -->
+      <button
+        type="button"
+        id="btn-restore-hud"
+        class="btn-restore-hud"
+        hidden
+        aria-label="Afișează interfața (Tasta H)"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Afișează interfața (H)</span>
+      </button>
+
+      <!-- TOP NAVIGATION & FILTER HUD -->
+      <header class="hud-header hud-element" aria-label="Navigare și filtre hartă">
+        <div class="hud-header__top">
+          <!-- Brand & Reopen Intro -->
+          <div class="hud-brand">
+            <button
+              type="button"
+              id="btn-reopen-intro"
+              class="hud-brand__btn hud-brand__btn--logos"
+              title="Reveniți la ecranul de introducere"
+              aria-label="Reveniți la ecranul de introducere"
+            >
+              <img
+                src="assets/photos/logos/lider-european-2026.webp"
+                alt="Lider European 2026"
+                class="hud-brand__logo hud-brand__logo--lider"
+                width="30"
+                height="30"
+              />
+              <img
+                src="assets/photos/logos/stema-comuna-runcu.webp"
+                alt="Stema Comunei Runcu"
+                class="hud-brand__logo hud-brand__logo--crest"
+                width="26"
+                height="34"
+              />
+              <img
+                src="assets/photos/logos/liceul-tehnologic-balta.webp"
+                alt="Liceul Tehnologic Bâlta – Runcu"
+                class="hud-brand__logo hud-brand__logo--school"
+                width="32"
+                height="32"
+              />
+            </button>
+            <span id="dev-status-pill" class="dev-status-pill" hidden></span>
+          </div>
+
+          <!-- Search & List Synchronized View Trigger -->
+          <div class="hud-search-group">
+            <div class="search-input-wrap">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input
+                type="search"
+                id="search-waypoints-input"
+                class="search-input"
+                placeholder="Caută loc, tradiție, poveste..."
+                aria-label="Caută puncte pe hartă după nume sau descriere"
+                autocomplete="off"
+              />
+              <button
+                type="button"
+                id="btn-clear-search"
+                class="search-clear-btn"
+                hidden
+                aria-label="Șterge căutarea"
+              >
+                ×
+              </button>
+            </div>
+
+            <button
+              type="button"
+              id="btn-toggle-list"
+              class="btn-hud-pill"
+              aria-expanded="false"
+              aria-controls="list-drawer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              <span>Listă locuri</span>
+            </button>
+          </div>
+
+          <!-- Presentation Actions: Guided Tour, QR, Thanks, Language -->
+          <div class="hud-actions">
+            <button
+              type="button"
+              id="btn-start-tour"
+              class="btn-hud-pill btn-hud-pill--accent"
+              aria-pressed="false"
+              title="Pornește modul prezentare pe lista Tur recomandat (Săgeți / Space / Clicker)"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Tur ghidat</span>
+            </button>
+
+            <button
+              type="button"
+              class="btn-hud-pill"
+              data-open-modal="qr"
+              title="Ecran Scanează și explorează (Cod QR)"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
+              <span class="hide-sm">QR</span>
+            </button>
+
+            <button
+              type="button"
+              class="btn-hud-pill"
+              data-open-modal="thanks"
+              title="Ecran Mulțumim, echipa și parteneri"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span class="hide-sm">Mulțumim</span>
+            </button>
+
+            <button
+              type="button"
+              id="btn-toggle-sound"
+              class="btn-hud-pill btn-toggle-sound"
+              aria-label="Comută sunetele tactile ale hărții"
+              title="Sunet interfață (Activat)"
+            >
+              <svg class="sound-icon-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              <svg class="sound-icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              <span class="hide-sm sound-label">Sunet</span>
+            </button>
+
+            <!-- Language Switcher (shown ONLY if EN translations exist in waypoints.json) -->
+            <button
+              type="button"
+              id="btn-lang-switch"
+              class="btn-hud-pill"
+              hidden
+              aria-label="Schimbă limba RO / EN"
+            >
+              RO
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filter Chips Row -->
+        <nav
+          id="category-chips-bar"
+          class="category-chips-bar"
+          aria-label="Filtrare puncte pe categorii"
+        ></nav>
+      </header>
+
+      <!-- SYNCHRONIZED LIST DRAWER (Left Side) -->
+      <aside
+        id="list-drawer"
+        class="list-drawer hud-element"
+        hidden
+        aria-hidden="true"
+        aria-label="Lista sincronizată a punctelor de pe hartă"
+      >
+        <div class="list-drawer__header">
+          <div>
+            <h2 class="list-drawer__title">Puncte pe hartă</h2>
+            <span id="list-count-badge" class="list-drawer__count">0 puncte</span>
+          </div>
+          <button
+            type="button"
+            id="btn-close-list"
+            class="btn-icon-circle"
+            aria-label="Închide lista"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div id="waypoints-list-container" class="list-drawer__body"></div>
+      </aside>
+
+      <!-- WAYPOINT DETAIL PANEL (Right Side Desktop / Bottom Sheet Mobile) -->
+      <aside
+        id="detail-panel"
+        class="detail-panel hud-element"
+        hidden
+        aria-hidden="true"
+        aria-label="Detalii punct selectat"
+      >
+        <!-- Mobile Bottom Sheet Drag Handle -->
+        <div
+          id="detail-drag-handle"
+          class="detail-drag-handle"
+          role="button"
+          tabindex="0"
+          aria-label="Extinde sau restrânge panoul"
+        >
+          <span class="detail-drag-handle__bar"></span>
+        </div>
+
+        <button
+          type="button"
+          id="detail-close-btn"
+          class="btn-icon-circle detail-close-btn"
+          aria-label="Închide panoul de detalii (Esc)"
+          title="Închide (Esc)"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div id="detail-panel-body" class="detail-panel__body"></div>
+
+        <!-- Panel Footer with Prev / Next and Progress Indicator -->
+        <footer class="detail-panel__footer">
+          <div class="detail-progress">
+            <div class="detail-progress__top">
+              <span id="detail-progress-text" class="detail-progress__text">
+                Punctul 1 din 7
+              </span>
+              <span class="detail-progress__hint">← / → sau Space</span>
+            </div>
+            <div class="detail-progress__track">
+              <div id="detail-progress-fill" class="detail-progress__fill" style="width: 15%"></div>
+            </div>
+          </div>
+
+          <div class="detail-nav-buttons">
+            <button
+              type="button"
+              id="detail-prev-btn"
+              class="btn-secondary detail-nav-btn"
+              aria-label="Punctul anterior"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+              <span>Înapoi</span>
+            </button>
+            <button
+              type="button"
+              id="detail-next-btn"
+              class="btn-primary detail-nav-btn"
+              aria-label="Punctul următorul"
+            >
+              <span>Următorul</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </footer>
+      </aside>
+
+      <!-- PRESENTATION / GUIDED TOUR HUD (Bottom Center) -->
+      <section
+        id="tour-hud"
+        class="tour-hud hud-element"
+        hidden
+        aria-hidden="true"
+        aria-label="Controale Tur Ghidat"
+      >
+        <div class="tour-hud__progress-bar">
+          <div id="tour-autoplay-progress" class="tour-hud__progress-fill"></div>
+        </div>
+
+        <div class="tour-hud__inner">
+          <div class="tour-hud__info">
+            <span class="tour-hud__live-dot"></span>
+            <span id="tour-step-label" class="tour-hud__label">Tur Recomandat • 1 / 7</span>
+          </div>
+
+          <div id="tour-dots" class="tour-hud__dots" role="tablist" aria-label="Pași tur ghidat"></div>
+
+          <div class="tour-hud__controls">
+            <button
+              type="button"
+              id="tour-prev-btn"
+              class="btn-icon-circle"
+              title="Anteriorul (Săgeată Stânga / PageUp)"
+              aria-label="Oprirea anterioară"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+
+            <button
+              type="button"
+              id="tour-autoplay-btn"
+              class="btn-hud-pill"
+              aria-pressed="false"
+              title="Comută redarea automată a turului"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span class="tour-autoplay-label">Autoplay</span>
+            </button>
+
+            <button
+              type="button"
+              id="tour-next-btn"
+              class="btn-icon-circle"
+              title="Următorul (Săgeată Dreapta / PageDown / Space)"
+              aria-label="Oprirea următoare"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+
+            <button
+              type="button"
+              id="tour-exit-btn"
+              class="btn-hud-pill btn-hud-pill--subtle"
+              title="Ieșire din turul ghidat (Esc)"
+            >
+              <span>Ieșire (Esc)</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAP CONTROLS DOCK (Bottom Left) -->
+      <section
+        class="map-controls-dock hud-element"
+        aria-label="Controale cameră și stil hartă"
+      >
+        <div class="map-controls-group">
+          <button
+            type="button"
+            id="btn-reset-view"
+            class="map-ctrl-btn"
+            title="Resetează vederea asupra întregii comune Runcu"
+            aria-label="Resetează vederea hărții"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Vedere comună</span>
+          </button>
+
+          <button
+            type="button"
+            id="btn-toggle-3d"
+            class="map-ctrl-btn is-active"
+            aria-pressed="true"
+            title="Activează sau dezactivează relieful 3D și înclinarea camerei"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-8 4.5v9L12 21l8-4.5v-9L12 3z"/><path d="M12 12 4 7.5"/><path d="m12 12 8-4.5"/><path d="M12 12v9"/></svg>
+            <span>3D</span>
+          </button>
+
+          <button
+            type="button"
+            id="btn-toggle-fullscreen"
+            class="map-ctrl-btn"
+            title="Ecran complet (Tasta F)"
+            aria-label="Comută modul ecran complet (Tasta F)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            <span class="hide-sm">Fullscreen</span>
+          </button>
+
+          <button
+            type="button"
+            id="btn-toggle-hud"
+            class="map-ctrl-btn"
+            title="Ascunde interfața pentru proiecție curată (Tasta H)"
+            aria-label="Ascunde interfața (Tasta H)"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            <span class="hide-sm">HUD (H)</span>
+          </button>
+        </div>
+
+        <!-- Map Style Switcher -->
+        <div class="map-style-switcher" role="group" aria-label="Stil hartă">
+          <button
+            type="button"
+            class="style-pill is-active"
+            data-map-style="dark"
+            aria-pressed="true"
+          >
+            Nocturn
+          </button>
+          <button
+            type="button"
+            class="style-pill"
+            data-map-style="liberty"
+            aria-pressed="false"
+          >
+            Topografic
+          </button>
+          <button
+            type="button"
+            class="style-pill"
+            data-map-style="positron"
+            aria-pressed="false"
+          >
+            Luminos
+          </button>
+          <button
+            type="button"
+            class="style-pill"
+            data-map-style="satellite"
+            aria-pressed="false"
+          >
+            Satelit
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- 5. FULLSCREEN PHOTO LIGHTBOX -->
+    <div
+      id="lightbox-modal"
+      class="lightbox-modal"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Vizualizare fotografie pe tot ecranul"
+    >
+      <header class="lightbox-topbar">
+        <span id="lightbox-counter" class="lightbox-counter">1 / 1</span>
+        <div class="lightbox-topbar__actions">
+          <button
+            type="button"
+            id="lightbox-zoom"
+            class="btn-icon-circle"
+            aria-label="Mărește sau micșorează fotografia"
+            title="Zoom (2x)"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </button>
+          <button
+            type="button"
+            id="lightbox-close"
+            class="btn-icon-circle"
+            aria-label="Închide galeria fullscreen (Esc)"
+            title="Închide (Esc)"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="lightbox-main">
+        <button
+          type="button"
+          id="lightbox-prev"
+          class="lightbox-nav-btn lightbox-nav-btn--prev"
+          aria-label="Fotografia anterioară"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        <div id="lightbox-stage" class="lightbox-stage"></div>
+
+        <button
+          type="button"
+          id="lightbox-next"
+          class="lightbox-nav-btn lightbox-nav-btn--next"
+          aria-label="Fotografia următoare"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <footer class="lightbox-footer">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+        <span id="lightbox-credit" class="lightbox-credit"></span>
+      </footer>
+    </div>
+
+    <!-- 8A. MODAL „SCANEAZĂ ȘI EXPLOREAZĂ” (QR CODE) -->
+    <div
+      id="qr-modal"
+      class="modal-overlay"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="qr-modal-title"
+    >
+      <div class="modal-card modal-card--qr">
+        <button
+          type="button"
+          class="btn-icon-circle modal-close-btn"
+          data-close-modal
+          aria-label="Închide fereastra QR"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="modal-eyebrow">Lider European 2026 • Acces Public</div>
+        <h2 id="qr-modal-title" class="modal-title">Scanează și explorează</h2>
+        <p id="qr-status-note" class="modal-subtitle">
+          Deschide harta interactivă a comunei Runcu (jud. Gorj) direct pe telefonul tău.
+        </p>
+
+        <div id="qr-render-box" class="qr-render-box"></div>
+
+        <div class="qr-url-pill">
+          <span id="qr-url-display">URL final după deploy</span>
+        </div>
+
+        <div class="qr-config-bar">
+          <input
+            type="url"
+            id="qr-custom-url-input"
+            class="qr-url-input"
+            placeholder="https://exemplu.netlify.app (URL public final)"
+            aria-label="URL public final pentru generarea codului QR"
+          />
+          <button type="button" id="qr-apply-url-btn" class="btn-primary">
+            Generează QR
+          </button>
+        </div>
+
+        <div class="qr-download-actions">
+          <button type="button" id="qr-download-svg" class="btn-secondary" disabled>
+            Descarcă QR Vectorial (SVG)
+          </button>
+          <button type="button" id="qr-download-png" class="btn-secondary" disabled>
+            Descarcă QR Înaltă Rezoluție (PNG 2048px)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8B. MODAL FINAL „MULȚUMIM” (TEAM & LOGOS PLACEHOLDER) -->
+    <div
+      id="thanks-modal"
+      class="modal-overlay"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="thanks-modal-title"
+    >
+      <div class="modal-card modal-card--thanks">
+        <button
+          type="button"
+          class="btn-icon-circle modal-close-btn"
+          data-close-modal
+          aria-label="Închide fereastra Mulțumim"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="modal-eyebrow">Lider European 2026 • Comuna Runcu, Județul Gorj</div>
+        <h2 id="thanks-modal-title" class="modal-title modal-title--large">
+          Vă mulțumim!
+        </h2>
+        <p class="modal-subtitle">
+          Proiect dedicat descoperirii, protejării și promovării patrimoniului natural, cultural și comunitar al comunei Runcu, județul Gorj.
+        </p>
+
+        <div class="thanks-grid">
+          <div class="thanks-block">
+            <h3>Echipa de proiect</h3>
+            <ul class="thanks-list">
+              <li><span class="thanks-list__role">Membru 1</span><strong>Sacagiu Eduard</strong></li>
+              <li><span class="thanks-list__role">Membru 2</span><strong>Denisa Caramete</strong></li>
+              <li><span class="thanks-list__role">Membru 3</span><strong>Ana Udroiu</strong></li>
+              <li><span class="thanks-list__role">Membru 4</span><strong>Alex Stoika</strong></li>
+              <li class="thanks-list__coord"><span class="thanks-list__role">Profesor coordonator</span><strong>Popescu Flori</strong></li>
+            </ul>
+          </div>
+
+          <div class="thanks-block">
+            <h3>Comunitate & Parteneri</h3>
+            <p class="thanks-text">
+              Mulțumim localnicilor, păstrătorilor de tradiții și instituțiilor din <strong>Comuna Runcu, județul Gorj</strong> care au împărtășit fotografii, amintiri și mărturii pentru această hartă digitală.
+            </p>
+            <div class="thanks-logos-row">
+              <img
+                src="assets/photos/logos/lider-european-2026.webp"
+                alt="Lider European 2026"
+                title="Lider European 2026"
+                class="thanks-logo-img thanks-logo-img--lider"
+              />
+              <img
+                src="assets/photos/logos/stema-comuna-runcu.webp"
+                alt="Stema Comunei Runcu, Gorj"
+                title="Comuna Runcu, Județul Gorj"
+                class="thanks-logo-img"
+              />
+              <img
+                src="assets/photos/logos/liceul-tehnologic-balta.webp"
+                alt="Liceul Tehnologic „G-ral C-tin Șandru” Bâlta – Runcu"
+                title="Liceul Tehnologic „G-ral C-tin Șandru” Bâlta – Runcu"
+                class="thanks-logo-img thanks-logo-img--school"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button
+            type="button"
+            class="btn-secondary"
+            data-open-modal="qr"
+          >
+            Vezi Codul QR
+          </button>
+          <button type="button" class="btn-primary" data-close-modal>
+            Continuă explorarea hărții
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8C. MODAL „ALEGE MODUL HĂRȚII” (MAP MODE SELECTOR BEFORE ENTERING) -->
+    <div
+      id="map-mode-modal"
+      class="modal-overlay modal-overlay--mode-select"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="map-mode-modal-title"
+    >
+      <div class="modal-card modal-card--map-mode">
+        <button
+          type="button"
+          class="btn-icon-circle modal-close-btn"
+          data-close-modal
+          aria-label="Închide și rămâi la introducere"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+        <div class="modal-eyebrow">Lider European 2026 • Explorare 3D Comuna Runcu</div>
+        <h2 id="map-mode-modal-title" class="modal-title">
+          Alege modul de vizualizare
+        </h2>
+        <p class="modal-subtitle">
+          Cum dorești să începi călătoria prin inima comunei Runcu? Poți schimba perspectiva oricând și din meniul hărții.
+        </p>
+
+        <div class="map-mode-grid" role="radiogroup" aria-label="Perspective cartografice disponibile">
+          <!-- 1. Cinematic Nocturn -->
+          <article
+            class="map-mode-card is-selected"
+            data-mode-id="dark"
+            tabindex="0"
+            role="radio"
+            aria-checked="true"
+          >
+            <div class="map-mode-card__top">
+              <span class="map-mode-card__badge map-mode-card__badge--featured">Recomandat</span>
+              <div class="map-mode-card__check" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </div>
+            <div class="map-mode-card__icon-wrap map-mode-card__icon-wrap--dark" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                <path d="M19 3v4M21 5h-4"/>
+              </svg>
+            </div>
+            <h3 class="map-mode-card__title">Cinematic Nocturn</h3>
+            <p class="map-mode-card__desc">
+              Relief montan sculptat 3D, iluminare nocturnă caldă și puncte de interes contrastante.
+            </p>
+            <div class="map-mode-card__tags">
+              <span>Relief 3D accentuat</span>
+              <span>Contrast nocturn</span>
+            </div>
+          </article>
+
+          <!-- 2. Satelit + Relief 3D -->
+          <article
+            class="map-mode-card"
+            data-mode-id="satellite"
+            tabindex="0"
+            role="radio"
+            aria-checked="false"
+          >
+            <div class="map-mode-card__top">
+              <span class="map-mode-card__badge">Imagini Aeriene</span>
+              <div class="map-mode-card__check" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </div>
+            <div class="map-mode-card__icon-wrap map-mode-card__icon-wrap--satellite" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3.6 9h16.8M3.6 15h16.8"/>
+                <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a17 17 0 0 1 0 18"/>
+              </svg>
+            </div>
+            <h3 class="map-mode-card__title">Satelit + Relief 3D</h3>
+            <p class="map-mode-card__desc">
+              Fotografie aeriană reală de înaltă rezoluție suprapusă peste altimetria digitală a Munților Vâlcan.
+            </p>
+            <div class="map-mode-card__tags">
+              <span>Imagini satelitare</span>
+              <span>Fidelitate montană</span>
+            </div>
+          </article>
+
+          <!-- 3. Explorator Topografic -->
+          <article
+            class="map-mode-card"
+            data-mode-id="liberty"
+            tabindex="0"
+            role="radio"
+            aria-checked="false"
+          >
+            <div class="map-mode-card__top">
+              <span class="map-mode-card__badge">Curbe de Nivel</span>
+              <div class="map-mode-card__check" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </div>
+            <div class="map-mode-card__icon-wrap map-mode-card__icon-wrap--liberty" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+                <path d="M4.14 15h15.72"/>
+              </svg>
+            </div>
+            <h3 class="map-mode-card__title">Explorator Topografic</h3>
+            <p class="map-mode-card__desc">
+              Cartografie detaliată cu rețeaua hidrografică a Sohodolului, păduri și curbe de nivel.
+            </p>
+            <div class="map-mode-card__tags">
+              <span>Trasee & drumeție</span>
+              <span>Detalii de teren</span>
+            </div>
+          </article>
+
+          <!-- 4. Editorial Luminos -->
+          <article
+            class="map-mode-card"
+            data-mode-id="positron"
+            tabindex="0"
+            role="radio"
+            aria-checked="false"
+          >
+            <div class="map-mode-card__top">
+              <span class="map-mode-card__badge">Design Minimal</span>
+              <div class="map-mode-card__check" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </div>
+            <div class="map-mode-card__icon-wrap map-mode-card__icon-wrap--positron" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+            </div>
+            <h3 class="map-mode-card__title">Editorial Luminos</h3>
+            <p class="map-mode-card__desc">
+              Cartografie curată și luminoasă, cu contrast optim pentru prezentări pe videoproiector.
+            </p>
+            <div class="map-mode-card__tags">
+              <span>Claritate maximă</span>
+              <span>Vedere de zi</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="modal-footer-actions modal-footer-actions--split">
+          <button
+            type="button"
+            class="btn-secondary"
+            data-close-modal
+          >
+            ← Înapoi la introducere
+          </button>
+          <button
+            type="button"
+            id="btn-confirm-map-mode"
+            class="btn-primary btn-primary--glow"
+          >
+            <span>Intră pe hartă cu modul selectat</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

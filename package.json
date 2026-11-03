@@ -1,0 +1,24 @@
+{
+  "name": "lider-european-2026-runcu-gorj",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hartă digitală interactivă și cinematică a comunei Runcu, județul Gorj — Proiectul Lider European 2026",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/export-mymaps-csv.mjs && vite build",
+    "preview": "vite preview",
+    "optimize:photos": "node scripts/optimize-photos.mjs",
+    "export:csv": "node scripts/export-mymaps-csv.mjs",
+    "generate:qr": "node scripts/generate-qr.mjs"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7",
+    "maplibre-gl": "^5.2.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "vite": "^6.2.0"
+  }
+}

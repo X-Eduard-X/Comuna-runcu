@@ -1,0 +1,672 @@
+{
+  "project": {
+    "title": "Comuna Runcu",
+    "subtitle": "Lider European 2026",
+    "region": "Județul Gorj, România",
+    "tagline": "Călătorie ghidată prin patrimoniul natural, tradițiile și memoria vie a comunității.",
+    "deployUrl": "",
+    "introCover": {
+      "src": "assets/photos/intro-cover/cover-runcu-gorj.webp",
+      "srcsetWebp": "assets/photos/intro-cover/cover-runcu-gorj-480w.webp 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.webp 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.webp 1600w",
+      "srcsetAvif": "assets/photos/intro-cover/cover-runcu-gorj-480w.avif 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.avif 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.avif 1600w",
+      "fallback": "assets/photos/intro-cover/cover-runcu-gorj.jpg",
+      "width": 1600,
+      "height": 2143,
+      "alt": "Totem iluminat nocturn cu stema, steagurile României și Uniunii Europene și inscripția Runcu, Bine ați venit, Județul Gorj",
+      "caption": "Runcu, județul Gorj"
+    }
+  },
+  "categories": {
+    "A": {
+      "id": "A",
+      "label": "Obiective turistice",
+      "shortLabel": "Obiective turistice",
+      "subtitle": "Naturale, locuri de interes, belvedere, trasee și zone de vizitare",
+      "color": "#10B981"
+    },
+    "B": {
+      "id": "B",
+      "label": "Tradiții și obiceiuri",
+      "shortLabel": "Tradiții și obiceiuri",
+      "subtitle": "Sărbători, tradiții de comunitate, port popular, preparate și meșteșuguri",
+      "color": "#F97316"
+    },
+    "C": {
+      "id": "C",
+      "label": "Personalități locale",
+      "shortLabel": "Personalități locale",
+      "subtitle": "Oameni care au contribuit la comunitate, oameni de cultură, meșteri populari",
+      "color": "#EAB308"
+    },
+    "D": {
+      "id": "D",
+      "label": "Poveștile comunității",
+      "shortLabel": "Poveștile comunității",
+      "subtitle": "Legende, amintiri ale localnicilor, povești despre locuri, mărturii intergeneraționale",
+      "color": "#A855F7"
+    }
+  },
+  "waypoints": [
+    {
+      "id": "a-chei-rau",
+      "category": "A",
+      "featured": true,
+      "order": 1,
+      "title": "Rezervația Naturală Cheile Sohodolului",
+      "description": "Săpate de apele limpezi ale râului Sohodol în calcarele cretacice ale Munților Vâlcan, Cheile Sohodolului alcătuiesc unul dintre cele mai spectaculoase defilee carstice din Oltenia. Pe o lungime de peste zece kilometri, pereții verticali de stâncă adăpostesc formațiuni geologice precum Inelul Doamnei, Nările și Peștera Popii, vestită pentru desenele sale rupestre preistorice. Zona este o arie naturală protejată de interes național, îndrăgită de drumeți, alpiniști și iubitori ai naturii sălbatice.",
+      "coordinates": [23.1365, 45.1625],
+      "camera": {
+        "zoom": 13.9,
+        "pitch": 64,
+        "bearing": -28
+      },
+      "photos": [
+        {
+          "src": "assets/photos/a-chei-rau/06-chei-rau-1.webp",
+          "srcsetWebp": "assets/photos/a-chei-rau/06-chei-rau-1-480w.webp 480w, assets/photos/a-chei-rau/06-chei-rau-1-960w.webp 960w, assets/photos/a-chei-rau/06-chei-rau-1-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-chei-rau/06-chei-rau-1-480w.avif 480w, assets/photos/a-chei-rau/06-chei-rau-1-960w.avif 960w, assets/photos/a-chei-rau/06-chei-rau-1-1600w.avif 1600w",
+          "fallback": "assets/photos/a-chei-rau/06-chei-rau-1.jpg",
+          "width": 1600,
+          "height": 897,
+          "alt": "Râul Sohodol cu apă limpede și bolovani de calcar în albie, încadrat de versanți stâncoși și pădure verde",
+          "caption": "Cursul râului Sohodol la ieșirea dintre pereții calcaroși ai cheilor.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-chei-rau/07-chei-rau-2.webp",
+          "srcsetWebp": "assets/photos/a-chei-rau/07-chei-rau-2-480w.webp 480w, assets/photos/a-chei-rau/07-chei-rau-2-960w.webp 960w, assets/photos/a-chei-rau/07-chei-rau-2-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-chei-rau/07-chei-rau-2-480w.avif 480w, assets/photos/a-chei-rau/07-chei-rau-2-960w.avif 960w, assets/photos/a-chei-rau/07-chei-rau-2-1600w.avif 1600w",
+          "fallback": "assets/photos/a-chei-rau/07-chei-rau-2.jpg",
+          "width": 1600,
+          "height": 2143,
+          "alt": "Perete masiv de calcar modelat de apele înspumate ale râului Sohodol într-un sector îngust de canion",
+          "caption": "Sector îngust de chei modelat de apele repezi în stânca masivă de calcar.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-chei-rau/08-chei-rau-3.webp",
+          "srcsetWebp": "assets/photos/a-chei-rau/08-chei-rau-3-480w.webp 480w, assets/photos/a-chei-rau/08-chei-rau-3-960w.webp 960w, assets/photos/a-chei-rau/08-chei-rau-3-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-chei-rau/08-chei-rau-3-480w.avif 480w, assets/photos/a-chei-rau/08-chei-rau-3-960w.avif 960w, assets/photos/a-chei-rau/08-chei-rau-3-1600w.avif 1600w",
+          "fallback": "assets/photos/a-chei-rau/08-chei-rau-3.jpg",
+          "width": 1500,
+          "height": 2000,
+          "alt": "Versanți abrupți de calcar alb în Cheile Sohodolului, deasupra pârâului de munte",
+          "caption": "Abrupturile calcaroase ale Cheilor Sohodolului străjuind valea.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "Wikipedia — Cheile Sohodolului (https://ro.wikipedia.org/wiki/Cheile_Sohodolului) și OpenStreetMap (https://www.openstreetmap.org/#map=14/45.1625/23.1365)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "a-varful-arcanu",
+      "category": "A",
+      "featured": true,
+      "order": 2,
+      "title": "Vârful Arcanu (1.760 m) și Crucea Eroilor — „Drumul Crucii”",
+      "description": "Situat pe culmea principală a Munților Vâlcan la altitudinea de 1.760 m, în imediata vecinătate nord-vestică a hotarului comunei Runcu (la ~2,2 km de limita administrativă), Vârful Arcanu oferă o panoramă amplă asupra Depresiunii Subcarpatice și a crestei Carpaților Meridionali. La 10 iunie 2005, în cadrul inițiativei comemorative „Drumul Crucii”, pe vârf a fost înălțată o cruce metalică dedicată memoriei eroilor. În fiecare vară, localnicii din Runcu și satele învecinate urcă în pelerinaj pe potecile vechi de transhumanță ce pornesc din Valea Bâlții spre golul alpin al Arcanului.",
+      "coordinates": [23.0156987, 45.2454085],
+      "boundaryStatus": "outside",
+      "proximityBadge": "În vecinătate • 2,2 km NV de hotar",
+      "boundaryAnchor": [23.0237448, 45.2262163],
+      "camera": {
+        "zoom": 13.3,
+        "pitch": 62,
+        "bearing": -38
+      },
+      "photos": [
+        {
+          "src": "assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-480w.webp 480w, assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-960w.webp 960w, assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-480w.avif 480w, assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-960w.avif 960w, assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/01-varful-arcanu-creasta-valcan.jpg",
+          "width": 1600,
+          "height": 699,
+          "alt": "Panoramă de pe Vârful Arcanu asupra culmilor stâncoase și împădurite ale Munților Vâlcan, cu pajiște alpină în prim-plan",
+          "caption": "Culmile Munților Vâlcan văzute de pe golul alpin al Vârfului Arcanu (1.760 m).",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-480w.webp 480w, assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-960w.webp 960w, assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-480w.avif 480w, assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-960w.avif 960w, assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/02-crucea-arcanu-drumul-crucii.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Cruce metalică pe Vârful Arcanu cu drapelul României, icoană și plăcile comemorative În memoria eroilor, A.C.T. Drumul Crucii, 10 iunie 2005",
+          "caption": "Monumentul cruciform de pe Vârful Arcanu (1.760 m), ridicat la 10 iunie 2005 în cadrul acțiunii „Drumul Crucii”.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-480w.webp 480w, assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-960w.webp 960w, assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-480w.avif 480w, assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-960w.avif 960w, assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/03-varful-arcanu-panorama-runcu.jpg",
+          "width": 1600,
+          "height": 699,
+          "alt": "Vedere panoramică de pe Vârful Arcanu spre versantul sudic al Munților Vâlcan și satele comunei Runcu din vale",
+          "caption": "Deschidere panoramică de pe Vârful Arcanu spre văile și satele comunei Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-480w.webp 480w, assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-960w.webp 960w, assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-480w.avif 480w, assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-960w.avif 960w, assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/04-varful-arcanu-depresiunea-gorj.jpg",
+          "width": 1600,
+          "height": 699,
+          "alt": "Panoramă largă peste pădurile de fag de pe versanții Vâlcanului și Depresiunea Subcarpatică a Gorjului",
+          "caption": "Belvedere amplă de la 1.760 m altitudine peste Subcarpații Gorjului.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-480w.webp 480w, assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-960w.webp 960w, assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-480w.avif 480w, assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-960w.avif 960w, assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/05-varful-arcanu-belvedere-apus.jpg",
+          "width": 900,
+          "height": 1600,
+          "alt": "Pajiștea alpină de pe Vârful Arcanu la lăsarea serii, cu satele din depresiune vizibile în depărtare",
+          "caption": "Lumina înserării peste golul alpin al Arcanului și vatra satelor de la poalele muntelui.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina.webp",
+          "srcsetWebp": "assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-480w.webp 480w, assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-960w.webp 960w, assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-480w.avif 480w, assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-960w.avif 960w, assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina-1600w.avif 1600w",
+          "fallback": "assets/photos/a-varful-arcanu/06-varful-arcanu-pajiste-alpina.jpg",
+          "width": 739,
+          "height": 1600,
+          "alt": "Versantul alpin înierbat al Vârfului Arcanu coborând spre pădurile de foioase și valea de la poale",
+          "caption": "Plaiul alpin al Vârfului Arcanu în coborâre spre făgetele comunei Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "OpenStreetMap — Vârful Arcanu, 1760 m (https://www.openstreetmap.org/#map=15/45.2454/23.0157) și Gazeta de Sud — „Drumul Crucii” pe Vârful Arcanu (https://www.gds.ro/Local/Gorj/2014-07-08/gorj-drumul-crucii-pe-varful-arcanu/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "a-drum-priveliste",
+      "category": "A",
+      "featured": true,
+      "order": 3,
+      "title": "Drumul montan DJ672C pe Valea Sohodolului",
+      "description": "Dincolo de sectorul îngust al Cheilor Sohodolului, drumul județean DJ672C își continuă urcușul domol de-a lungul văii, străbătând păduri întinse de fag și gorun. Traseul leagă vatra satului Runcu de poienile montane din bazinul superior al Sohodolului, fiind una dintre cele mai pitorești căi de acces rutier și cicloturistic către Munții Vâlcan. Toamna și vara, culmile împădurite care mărginesc șoseaua oferă un cadru liniștit pentru plimbări în aerul curat de munte.",
+      "coordinates": [23.1390, 45.2120],
+      "camera": {
+        "zoom": 14.4,
+        "pitch": 60,
+        "bearing": 18
+      },
+      "photos": [
+        {
+          "src": "assets/photos/a-drum-priveliste/02-drum-priveliste.webp",
+          "srcsetWebp": "assets/photos/a-drum-priveliste/02-drum-priveliste-480w.webp 480w, assets/photos/a-drum-priveliste/02-drum-priveliste-960w.webp 960w, assets/photos/a-drum-priveliste/02-drum-priveliste-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-drum-priveliste/02-drum-priveliste-480w.avif 480w, assets/photos/a-drum-priveliste/02-drum-priveliste-960w.avif 960w, assets/photos/a-drum-priveliste/02-drum-priveliste-1600w.avif 1600w",
+          "fallback": "assets/photos/a-drum-priveliste/02-drum-priveliste.jpg",
+          "width": 1536,
+          "height": 2752,
+          "alt": "Drum asfaltat mărginit de versanți împăduriți în nuanțe de verde și galben-auriu, sub un cer albastru cu nori fini",
+          "caption": "Sector forestier al drumului de pe Valea Sohodolului, la poalele Munților Vâlcan.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "OpenStreetMap — DJ672C, Comuna Runcu (https://www.openstreetmap.org/#map=14/45.2120/23.1390) și Portalul Runcu Gorj (https://www.runcugorj.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "a-poteca-padure",
+      "category": "A",
+      "featured": true,
+      "order": 4,
+      "title": "Potecă de drumeție în făgetele Munților Vâlcan",
+      "description": "Versanții sudici ai Munților Vâlcan, care domină satele comunei Runcu, sunt brăzdați de o rețea de poteci umbrite ce urcă prin făgete seculare spre poienile înalte și plaiurile pastorale. Aceste cărări tradiționale au fost bătătorite timp de secole de localnici și de ciobanii aflați în transhumanță între Subcarpații Gorjului și golul alpin. Astăzi, potecile oferă trasee accesibile de drumeție și ecoturism într-un ecosistem forestier bogat în floră montană.",
+      "coordinates": [23.1220, 45.1880],
+      "camera": {
+        "zoom": 14.6,
+        "pitch": 58,
+        "bearing": -24
+      },
+      "photos": [
+        {
+          "src": "assets/photos/a-poteca-padure/01-poteca-padure.webp",
+          "srcsetWebp": "assets/photos/a-poteca-padure/01-poteca-padure-480w.webp 480w, assets/photos/a-poteca-padure/01-poteca-padure-960w.webp 960w, assets/photos/a-poteca-padure/01-poteca-padure-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-poteca-padure/01-poteca-padure-480w.avif 480w, assets/photos/a-poteca-padure/01-poteca-padure-960w.avif 960w, assets/photos/a-poteca-padure/01-poteca-padure-1600w.avif 1600w",
+          "fallback": "assets/photos/a-poteca-padure/01-poteca-padure.jpg",
+          "width": 1536,
+          "height": 2752,
+          "alt": "Potecă de pământ acoperită cu frunze uscate care șerpuiește printr-o pădure deasă cu arbori înalți și frunziș verde",
+          "caption": "Potecă de pădure pe culmile împădurite din nordul comunei Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "Wikipedia — Munții Vâlcan (https://ro.wikipedia.org/wiki/Mun%C8%9Bii_V%C3%A2lcan) și TuristInfo — Zona Runcu-Sohodol (https://www.turistinfo.ro/runcu-gorj/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "a-interior-candelabru",
+      "category": "A",
+      "featured": true,
+      "order": 5,
+      "title": "Lăcaș de cult ortodox din Runcu — policandru și frescă neo-bizantină",
+      "description": "Viața spirituală a satelor din comuna Runcu gravitează în jurul bisericilor parohiale și filiale, între care Biserica „Sfânta Cuvioasă Parascheva” din Runcu (ridicată la cumpăna secolelor XIX–XX) și lăcașurile din Bâltișoara, Răchiți, Valea Mare și Dobrița. Interiorul surprins în fotografie păstrează armonia arhitecturii sacre ortodoxe, cu bolta pictată în frescă neo-bizantină înfățișându-i pe Sfinții Împărați Constantin și Elena și pe Sfântul Evanghelist Ioan. În centrul naosului, policandrul aurit cu două registre de lumini întregește atmosfera de reculegere a sărbătorilor comunității.",
+      "coordinates": [23.1440, 45.1210],
+      "camera": {
+        "zoom": 15.0,
+        "pitch": 52,
+        "bearing": -32
+      },
+      "photos": [
+        {
+          "src": "assets/photos/a-interior-candelabru/03-interior-candelabru.webp",
+          "srcsetWebp": "assets/photos/a-interior-candelabru/03-interior-candelabru-480w.webp 480w, assets/photos/a-interior-candelabru/03-interior-candelabru-960w.webp 960w, assets/photos/a-interior-candelabru/03-interior-candelabru-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/a-interior-candelabru/03-interior-candelabru-480w.avif 480w, assets/photos/a-interior-candelabru/03-interior-candelabru-960w.avif 960w, assets/photos/a-interior-candelabru/03-interior-candelabru-1600w.avif 1600w",
+          "fallback": "assets/photos/a-interior-candelabru/03-interior-candelabru.jpg",
+          "width": 1600,
+          "height": 2684,
+          "alt": "Candelabru metalic aurit cu numeroase lumini, suspendat în interiorul unui lăcaș de cult cu pereți și boltă pictate în frescă",
+          "caption": "Policandrul aurit și fresca bolții într-o biserică ortodoxă din comuna Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "Ziarul Lumina — Parohia Runcu, Arhiepiscopia Craiovei (https://ziarullumina.ro/) și Wikipedia — Comuna Runcu, Gorj (https://ro.wikipedia.org/wiki/Comuna_Runcu,_Gorj)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "b-port-popular-ansamblu",
+      "category": "B",
+      "featured": true,
+      "order": 6,
+      "title": "Portul popular gorjenesc și tinerii păstrători de tradiții din Runcu",
+      "description": "Comuna Runcu păstrează cu mândrie bogăția costumului popular din zona submontană a Gorjului, transmis astăzi tinerelor generații prin ansamblurile folclorice locale. Portul de sărbătoare reunește iile din pânză topită cusute cu râuri geometrice negre și roșii, vâlnicele și catrințele țesute în război, brâiele alese și ulcioarele de lut purtate în alaiurile tradiționale. O piesă aparte a zestrei pastorale o reprezintă șuba lungă din dimie albă sau neagră, împodobită cu găitane, mărturie a legăturilor seculare dintre satele de sub Vâlcan și oierii transhumanți.",
+      "coordinates": [23.1423, 45.1192],
+      "camera": {
+        "zoom": 15.1,
+        "pitch": 54,
+        "bearing": -18
+      },
+      "photos": [
+        {
+          "src": "assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu.webp",
+          "srcsetWebp": "assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-480w.webp 480w, assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-960w.webp 960w, assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-480w.avif 480w, assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-960w.avif 960w, assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu-1600w.avif 1600w",
+          "fallback": "assets/photos/b-port-popular-ansamblu/01-ansamblu-tineri-runcu.jpg",
+          "width": 1451,
+          "height": 1200,
+          "alt": "Grup de copii și tineri în costume populare tradiționale gorjenești, fotografiați în fața unei clădiri din bârne de lemn",
+          "caption": "Tineri și copii din ansamblul folcloric în costume autentice gorjenești.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc.webp",
+          "srcsetWebp": "assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-480w.webp 480w, assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-960w.webp 960w, assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-480w.avif 480w, assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-960w.avif 960w, assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc-1600w.avif 1600w",
+          "fallback": "assets/photos/b-port-popular-ansamblu/02-tinere-ulcioare-port-gorjenesc.jpg",
+          "width": 1142,
+          "height": 857,
+          "alt": "Tinere în port popular gorjenesc roșu cu alb, ținând în mâini ulcioare tradiționale de lut",
+          "caption": "Purtătoare ale portului popular gorjenesc cu ulcioare din ceramică.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna.webp",
+          "srcsetWebp": "assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-480w.webp 480w, assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-960w.webp 960w, assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-480w.avif 480w, assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-960w.avif 960w, assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna-1600w.avif 1600w",
+          "fallback": "assets/photos/b-port-popular-ansamblu/03-sube-pastoresti-iarna.jpg",
+          "width": 902,
+          "height": 1252,
+          "alt": "Tinere îmbrăcate în șube lungi tradiționale din dimie albă și neagră, ornamentate cu găitane, pe timp de iarnă",
+          "caption": "Costumul popular de iarnă cu șube din dimie bătută la piuă și ornamentată cu găitane.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/b-portret-port-popular/10-portret-port-popular.webp",
+          "srcsetWebp": "assets/photos/b-portret-port-popular/10-portret-port-popular-480w.webp 480w, assets/photos/b-portret-port-popular/10-portret-port-popular-960w.webp 960w, assets/photos/b-portret-port-popular/10-portret-port-popular-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-portret-port-popular/10-portret-port-popular-480w.avif 480w, assets/photos/b-portret-port-popular/10-portret-port-popular-960w.avif 960w, assets/photos/b-portret-port-popular/10-portret-port-popular-1600w.avif 1600w",
+          "fallback": "assets/photos/b-portret-port-popular/10-portret-port-popular.jpg",
+          "width": 1600,
+          "height": 2143,
+          "alt": "Portret în ie tradițională albă cu broderie neagră pe umăr, încadrat de flori albe de salcâm",
+          "caption": "Detaliu de ie gorjenească cusută cu motive tradiționale, la vremea înfloririi salcâmilor.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        }
+      ],
+      "source": "Centrul Județean pentru Conservarea și Promovarea Culturii Tradiționale Gorj (https://culturagorj.ro/) și Vatra Meșterilor și Creatorilor de Patrimoniu (https://www.vatra-mcp.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "b-dans-hora",
+      "category": "B",
+      "featured": true,
+      "order": 7,
+      "title": "Hora satului și sărbătorile comunității din Runcu",
+      "description": "Din generație în generație, hora duminicală și nedeile sătești au reprezentat inima vieții sociale în satele comunei Runcu. Fotografiile de arhivă și cele contemporane surprind aceeași bucurie a întâlnirii: de la jocul în aer liber acompaniat la acordeon în poienile satului, până la marile hore de sărbătoare care reunesc astăzi întreaga comunitate. Prin pașii de horă și sârbă gorjenească, legătura dintre vârstnici, părinți și tineri rămâne vie la fiecare praznic al localității.",
+      "coordinates": [23.1485, 45.1160],
+      "camera": {
+        "zoom": 14.9,
+        "pitch": 50,
+        "bearing": -15
+      },
+      "photos": [
+        {
+          "src": "assets/photos/b-dans-hora/05-dans-hora.webp",
+          "srcsetWebp": "assets/photos/b-dans-hora/05-dans-hora-480w.webp 480w, assets/photos/b-dans-hora/05-dans-hora-960w.webp 960w, assets/photos/b-dans-hora/05-dans-hora-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-dans-hora/05-dans-hora-480w.avif 480w, assets/photos/b-dans-hora/05-dans-hora-960w.avif 960w, assets/photos/b-dans-hora/05-dans-hora-1600w.avif 1600w",
+          "fallback": "assets/photos/b-dans-hora/05-dans-hora.jpg",
+          "width": 1600,
+          "height": 1195,
+          "alt": "Fotografie alb-negru cu perechi de localnici în port popular dansând în aer liber, acompaniați la acordeon",
+          "caption": "Joc popular în aer liber acompaniat la acordeon — imagine din arhiva comunității.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/b-dans-hora/02-hora-comunitate-interior.webp",
+          "srcsetWebp": "assets/photos/b-dans-hora/02-hora-comunitate-interior-480w.webp 480w, assets/photos/b-dans-hora/02-hora-comunitate-interior-960w.webp 960w, assets/photos/b-dans-hora/02-hora-comunitate-interior-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-dans-hora/02-hora-comunitate-interior-480w.avif 480w, assets/photos/b-dans-hora/02-hora-comunitate-interior-960w.avif 960w, assets/photos/b-dans-hora/02-hora-comunitate-interior-1600w.avif 1600w",
+          "fallback": "assets/photos/b-dans-hora/02-hora-comunitate-interior.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Horă mare a comunității într-o sală de festivități, cu localnici de toate vârstele prinși în cerc",
+          "caption": "Horă a comunității la o sărbătoare locală din Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        }
+      ],
+      "source": "Centrul Județean pentru Conservarea și Promovarea Culturii Tradiționale Gorj (https://culturagorj.ro/) și Portalul Runcu Gorj (https://www.runcugorj.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "b-mesteguri-torsul-lanii",
+      "category": "B",
+      "featured": true,
+      "order": 8,
+      "title": "Meșteșugul torsului lânii și țesăturile pe prispa casei bătrânești",
+      "description": "În gospodăriile tradiționale din satele comunei Runcu, prelucrarea lânii a fost timp de veacuri un meșteșug de bază al economiei casnice. Pe prispa de lemn cu stâlpi crestați, femeile îmbrăcate în ie, catrință, opinci și maramă de borangic reconstituie gestul străvechi al torsului din caier cu furca și fusul. Din firele toarse manual și vopsite în culori calde au luat naștere scoarțele oltenești și țesăturile geometrice care împodobesc și astăzi lăzile de zestre ale localnicilor.",
+      "coordinates": [23.1195, 45.1200],
+      "camera": {
+        "zoom": 15.0,
+        "pitch": 56,
+        "bearing": -20
+      },
+      "photos": [
+        {
+          "src": "assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa.webp",
+          "srcsetWebp": "assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-480w.webp 480w, assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-960w.webp 960w, assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-480w.avif 480w, assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-960w.avif 960w, assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa-1600w.avif 1600w",
+          "fallback": "assets/photos/b-mesteguri-torsul-lanii/01-torsul-lanii-prispa.jpg",
+          "width": 720,
+          "height": 960,
+          "alt": "Trei femei în port popular gorjenesc cu maramă albă torcând lână pe prispa de lemn a unei case vechi, lângă o scoarță țesută",
+          "caption": "Torsul lânii cu furca și fusul pe prispa unei case tradiționale din bârne de lemn.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        }
+      ],
+      "source": "Vatra Meșterilor și Creatorilor de Patrimoniu — Comuna Runcu, Gorj (https://www.vatra-mcp.ro/) și CJCPCT Gorj (https://culturagorj.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "b-gastronomie-locala",
+      "category": "B",
+      "featured": true,
+      "order": 9,
+      "title": "Bucate tradiționale gorjenești din gospodăriile de sub munte",
+      "description": "Masa tradițională din Runcu oglindește legătura strânsă dintre oieritul montan din Vâlcan și grădinile rodnice din vatra satelor subcarpatice. Pe fundurile de lemn așezate pe ștergare țesute în război se regăsesc telemeaua proaspătă de stână, prazul oltenesc, roșiile de grădină, ardeiul iute și funiile de usturoi. Lor li se alătură preparatele din carne pregătite în gospodărie și afumate domol cu lemn de fag: cârnații de casă, slănina și caltaboșul.",
+      "coordinates": [23.1020, 45.1181],
+      "camera": {
+        "zoom": 14.8,
+        "pitch": 55,
+        "bearing": 14
+      },
+      "photos": [
+        {
+          "src": "assets/photos/b-gastronomie-locala/01-platou-branza-praz.webp",
+          "srcsetWebp": "assets/photos/b-gastronomie-locala/01-platou-branza-praz-480w.webp 480w, assets/photos/b-gastronomie-locala/01-platou-branza-praz-960w.webp 960w, assets/photos/b-gastronomie-locala/01-platou-branza-praz-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-gastronomie-locala/01-platou-branza-praz-480w.avif 480w, assets/photos/b-gastronomie-locala/01-platou-branza-praz-960w.avif 960w, assets/photos/b-gastronomie-locala/01-platou-branza-praz-1600w.avif 1600w",
+          "fallback": "assets/photos/b-gastronomie-locala/01-platou-branza-praz.jpg",
+          "width": 960,
+          "height": 720,
+          "alt": "Platou tradițional de lemn pe țesătură populară, cu brânză telemea, praz, roșii, ardei iute, usturoi împletit și afumături",
+          "caption": "Gustare țărănească pe ștergar țesut: brânză de stână, praz oltenesc, legume de grădină și afumături.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa.webp",
+          "srcsetWebp": "assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-480w.webp 480w, assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-960w.webp 960w, assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-480w.avif 480w, assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-960w.avif 960w, assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa-1600w.avif 1600w",
+          "fallback": "assets/photos/b-gastronomie-locala/02-carnati-afumaturi-casa.jpg",
+          "width": 960,
+          "height": 720,
+          "alt": "Platou de lemn cu cârnați de casă afumați, slănină și preparate tradiționale din carne",
+          "caption": "Preparate tradiționale de gospodărie afumate după rețete locale.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "TuristInfo — Tradiții pastorale și gastronomie în Comuna Runcu (https://www.turistinfo.ro/runcu-gorj/) și Portalul Runcu Gorj (https://www.runcugorj.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "c-personalitate-locala",
+      "category": "C",
+      "featured": true,
+      "order": 10,
+      "title": "Maria Apostol (1954–1993) — Casa-Muzeu și Festivalul Cântecului Popular",
+      "description": "Născută în Runcu la 11 august 1954, Maria Apostol rămâne una dintre vocile emblematice ale cântecului popular gorjenesc, laureată a trofeului „Floarea din grădină” (1973) și solistă de prestigiu a Ansamblului „Rapsodia Română”. În centrul comunei îi este dedicată o colecție muzeală memorială, iar monumentul său din marmură albă poartă versul care i-a definit destinul artistic: „Ușurel trecui prin lume ca pasărea prin pădure”. Anual, Primăria și Consiliul Local Runcu, alături de CJCPCT Gorj și Școala Populară de Arte, organizează în localitate Festivalul-Concurs al Cântecului Popular „Maria Apostol”, dedicat tinerilor interpreți din întreaga țară.",
+      "coordinates": [23.1415, 45.1198],
+      "camera": {
+        "zoom": 15.2,
+        "pitch": 50,
+        "bearing": -10
+      },
+      "photos": [
+        {
+          "src": "assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu.webp",
+          "srcsetWebp": "assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-480w.webp 480w, assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-960w.webp 960w, assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-480w.avif 480w, assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-960w.avif 960w, assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu-1600w.avif 1600w",
+          "fallback": "assets/photos/c-personalitate-locala/01-festivalul-maria-apostol-runcu.jpg",
+          "width": 1600,
+          "height": 1200,
+          "alt": "Tineri dansatori în port popular gorjenesc pe scena Festivalului-Concurs al Cântecului Popular Maria Apostol din Runcu",
+          "caption": "Evoluție pe scena Festivalului-Concurs al Cântecului Popular „Maria Apostol” din Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu.webp",
+          "srcsetWebp": "assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-480w.webp 480w, assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-960w.webp 960w, assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-480w.avif 480w, assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-960w.avif 960w, assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu-1600w.avif 1600w",
+          "fallback": "assets/photos/c-personalitate-locala/02-monument-maria-apostol-runcu.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Cruce comemorativă din marmură albă dedicată solistei Maria Apostol (11.VIII.1954 - 05.IX.1993), cu inscripția O voce inegalabilă a muzicii populare gorjenești",
+          "caption": "Monumentul comemorativ al solistei Maria Apostol (1954–1993) din satul natal Runcu.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "Wikipedia — Maria Apostol (https://ro.wikipedia.org/wiki/Maria_Apostol), CIMEC — Casa-Muzeu „Maria Apostol” Runcu (https://ghidulmuzeelor.cimec.ro/) și CJCPCT Gorj (https://culturagorj.ro/)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "d-rachiti-troite-lemn",
+      "category": "D",
+      "featured": true,
+      "order": 11,
+      "title": "Satul Răchiți — Poarta de intrare în comună și troițele sculptate în lemn",
+      "description": "Așezat la intrarea sud-estică în comuna Runcu — atestată oficial ca stațiune turistică de interes local — satul Răchiți îi întâmpină pe călători cu un ansamblu comunitar ce îmbină ospitalitatea cu meșteșugul sculpturii în lemn. La răscrucile drumului și la marginea viilor pe araci se înalță troițe din lemn crestat cu motive solare și funie răsucită, protejate sub acoperișuri de șindrilă. Aceste semne de hotar și de credință marchează din vechime locurile de popas și de bună-cuviință ale satelor gorjenești.",
+      "coordinates": [23.1517, 45.0975],
+      "camera": {
+        "zoom": 14.9,
+        "pitch": 54,
+        "bearing": -14
+      },
+      "photos": [
+        {
+          "src": "assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita.webp",
+          "srcsetWebp": "assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-480w.webp 480w, assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-960w.webp 960w, assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-480w.avif 480w, assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-960w.avif 960w, assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita-1600w.avif 1600w",
+          "fallback": "assets/photos/d-rachiti-troite-lemn/01-intrare-sat-rachiti-troita.jpg",
+          "width": 1600,
+          "height": 747,
+          "alt": "Intrarea în satul Răchiți, Comuna Runcu — Stațiune Turistică, cu foișor de lemn, stație și troiță sculptată",
+          "caption": "Intrarea în satul Răchiți (Comuna Runcu — Stațiune Turistică), cu foișorul de popas și troița din lemn.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023.webp",
+          "srcsetWebp": "assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-480w.webp 480w, assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-960w.webp 960w, assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-480w.avif 480w, assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-960w.avif 960w, assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023-1600w.avif 1600w",
+          "fallback": "assets/photos/d-rachiti-troite-lemn/02-troita-lemn-vie-2023.jpg",
+          "width": 1291,
+          "height": 1721,
+          "alt": "Troiță din lemn sculptat, datată 2023, amplasată sub un acoperiș protector lângă o vie tradițională și flori de primăvară",
+          "caption": "Troiță sculptată în lemn (2023), îngrijită cu flori de primăvară la marginea unei vii din comună.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/intro-cover/cover-runcu-gorj.webp",
+          "srcsetWebp": "assets/photos/intro-cover/cover-runcu-gorj-480w.webp 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.webp 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/intro-cover/cover-runcu-gorj-480w.avif 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.avif 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.avif 1600w",
+          "fallback": "assets/photos/intro-cover/cover-runcu-gorj.jpg",
+          "width": 1600,
+          "height": 2143,
+          "alt": "Totem iluminat nocturn cu stema, steagurile României și Uniunii Europene și inscripția Runcu, Bine ați venit, Județul Gorj",
+          "caption": "Totemul de bun-venit la intrarea în Comuna Runcu, județul Gorj.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": false,
+          "consent": true
+        }
+      ],
+      "source": "OpenStreetMap — Satul Răchiți, Comuna Runcu (https://www.openstreetmap.org/#map=16/45.0975/23.1517) și Wikipedia — Răchiți, Gorj (https://ro.wikipedia.org/wiki/R%C4%83chi%C8%9Bi,_Gorj)",
+      "consent": true,
+      "verified": false
+    },
+    {
+      "id": "d-poveste-comunitate",
+      "category": "D",
+      "featured": true,
+      "order": 12,
+      "title": "Runcu în imagini de epocă: gospodăria, claca și memoria satului",
+      "description": "Fotografiile de arhivă păstrate în familiile din comună deschid o fereastră rară către lumea satului gorjenesc din secolul trecut. Imaginile surprind rânduiala gospodăriei cu acoperiș de șindrilă și cerdac din lemn crestat, reculegerea femeilor și a copiilor lângă troițele bătrânești, torsul lânii lângă carul din curte și întoarcerea de la coasă cu carul tras de boi. Aceste mărturii vizuale intergeneraționale vorbesc despre solidaritate, muncă împărtășită și respectul față de pământ și străbuni.",
+      "coordinates": [23.1741, 45.1350],
+      "camera": {
+        "zoom": 14.8,
+        "pitch": 54,
+        "bearing": 22
+      },
+      "photos": [
+        {
+          "src": "assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia.webp",
+          "srcsetWebp": "assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-480w.webp 480w, assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-960w.webp 960w, assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-480w.avif 480w, assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-960w.avif 960w, assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia-1600w.avif 1600w",
+          "fallback": "assets/photos/d-poveste-comunitate/09-constructie-lemn-sepia.jpg",
+          "width": 1600,
+          "height": 2385,
+          "alt": "Fotografie veche în tonuri sepia înfățișând două femei și un copil în port tradițional lângă o troiță de lemn cu acoperiș de șindrilă",
+          "caption": "Localnice și copil în port tradițional lângă o troiță veche de lemn cu acoperiș de șindrilă.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi.webp",
+          "srcsetWebp": "assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-480w.webp 480w, assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-960w.webp 960w, assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-480w.avif 480w, assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-960w.avif 960w, assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi-1600w.avif 1600w",
+          "fallback": "assets/photos/d-poveste-comunitate/02-arhiva-gospodarie-car-boi.jpg",
+          "width": 1600,
+          "height": 1133,
+          "alt": "Fotografie de epocă alb-negru cu o gospodărie tradițională, o scoarță oltenească pe prispă, un copil în carul de lemn și femei torcând",
+          "caption": "Viața în curtea gospodăriei de altădată: torsul lânii lângă carul de lemn și scoarța oltenească pe prispă.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac.webp",
+          "srcsetWebp": "assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-480w.webp 480w, assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-960w.webp 960w, assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-480w.avif 480w, assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-960w.avif 960w, assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac-1600w.avif 1600w",
+          "fallback": "assets/photos/d-poveste-comunitate/03-arhiva-sarbatoare-cerdac.jpg",
+          "width": 1415,
+          "height": 2048,
+          "alt": "Fotografie de epocă alb-negru surprinzând o sărbătoare sătească lângă o casă cu etaj, cerdac de lemn și acoperiș de șindrilă",
+          "caption": "Adunare de sărbătoare sub cerdacul unei case vechi cu acoperiș de șindrilă.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        },
+        {
+          "src": "assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan.webp",
+          "srcsetWebp": "assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-480w.webp 480w, assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-960w.webp 960w, assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-480w.avif 480w, assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-960w.avif 960w, assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan-1600w.avif 1600w",
+          "fallback": "assets/photos/d-poveste-comunitate/04-arhiva-car-cu-fan.jpg",
+          "width": 1422,
+          "height": 2048,
+          "alt": "Fotografie de arhivă alb-negru cu un car tras de boi încărcat cu fân pe ulița satului, însoțit de localnici în port popular",
+          "caption": "Întoarcerea de la strânsul fânului cu carul tras de boi pe ulița satului.",
+          "credit": "Arhiva foto a proiectului — Comuna Runcu",
+          "hasPeople": true,
+          "consent": true
+        }
+      ],
+      "source": "Vatra Meșterilor și Creatorilor de Patrimoniu — Comuna Runcu (https://www.vatra-mcp.ro/) și Wikipedia — Comuna Runcu, Gorj (https://ro.wikipedia.org/wiki/Comuna_Runcu,_Gorj)",
+      "consent": true,
+      "verified": false
+    }
+  ]
+}

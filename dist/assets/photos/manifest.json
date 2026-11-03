@@ -1,0 +1,272 @@
+[
+  {
+    "inboxFile": "5.jpg",
+    "targetFolder": "intro-cover",
+    "baseName": "cover-runcu-gorj",
+    "width": 1600,
+    "height": 2143,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.38 PM(3).jpeg",
+    "targetFolder": "d-rachiti-troite-lemn",
+    "baseName": "01-intrare-sat-rachiti-troita",
+    "width": 1600,
+    "height": 747,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM(3).jpeg",
+    "targetFolder": "d-rachiti-troite-lemn",
+    "baseName": "02-troita-lemn-vie-2023",
+    "width": 1291,
+    "height": 1721,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "1.jpg",
+    "targetFolder": "a-chei-rau",
+    "baseName": "06-chei-rau-1",
+    "width": 1600,
+    "height": 897,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "2.jpg",
+    "targetFolder": "a-chei-rau",
+    "baseName": "07-chei-rau-2",
+    "width": 1600,
+    "height": 2143,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "3.jpeg",
+    "targetFolder": "a-chei-rau",
+    "baseName": "08-chei-rau-3",
+    "width": 1500,
+    "height": 2000,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Varful-arcanului/WhatsApp Image 2026-11-03 at 3.03.40 PM.jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "01-varful-arcanu-creasta-valcan",
+    "width": 1600,
+    "height": 663,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM(4).jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "02-crucea-arcanu-drumul-crucii",
+    "width": 1536,
+    "height": 2048,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Varful-arcanului/WhatsApp Image 2026-11-03 at 3.03.41 PM.jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "03-varful-arcanu-panorama-runcu",
+    "width": 1600,
+    "height": 684,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Varful-arcanului/WhatsApp Image 2026-11-03 at 3.03.41 PM(1).jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "04-varful-arcanu-depresiunea-gorj",
+    "width": 1600,
+    "height": 663,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Varful-arcanului/WhatsApp Image 2026-11-03 at 3.03.38 PM.jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "05-varful-arcanu-belvedere-apus",
+    "width": 899,
+    "height": 1599,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Varful-arcanului/WhatsApp Image 2026-11-03 at 3.03.41 PM(2).jpeg",
+    "targetFolder": "a-varful-arcanu",
+    "baseName": "06-varful-arcanu-pajiste-alpina",
+    "width": 774,
+    "height": 1598,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "7.jpg",
+    "targetFolder": "a-drum-priveliste",
+    "baseName": "02-drum-priveliste",
+    "width": 1536,
+    "height": 2752,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "8.jpg",
+    "targetFolder": "a-poteca-padure",
+    "baseName": "01-poteca-padure",
+    "width": 1536,
+    "height": 2752,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "6.jpg",
+    "targetFolder": "a-interior-candelabru",
+    "baseName": "03-interior-candelabru",
+    "width": 1600,
+    "height": 2684,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM(2).jpeg",
+    "targetFolder": "b-port-popular-ansamblu",
+    "baseName": "01-ansamblu-tineri-runcu",
+    "width": 1451,
+    "height": 1200,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM(3).jpeg",
+    "targetFolder": "b-port-popular-ansamblu",
+    "baseName": "02-tinere-ulcioare-port-gorjenesc",
+    "width": 1142,
+    "height": 857,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.38 PM(1).jpeg",
+    "targetFolder": "b-port-popular-ansamblu",
+    "baseName": "03-sube-pastoresti-iarna",
+    "width": 902,
+    "height": 1252,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "9.jpg",
+    "targetFolder": "b-portret-port-popular",
+    "baseName": "10-portret-port-popular",
+    "width": 1600,
+    "height": 2143,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "4.jpg",
+    "targetFolder": "b-dans-hora",
+    "baseName": "05-dans-hora",
+    "width": 1600,
+    "height": 1195,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.38 PM(2).jpeg",
+    "targetFolder": "b-dans-hora",
+    "baseName": "02-hora-comunitate-interior",
+    "width": 1536,
+    "height": 2048,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.38 PM.jpeg",
+    "targetFolder": "b-mesteguri-torsul-lanii",
+    "baseName": "01-torsul-lanii-prispa",
+    "width": 720,
+    "height": 960,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.38 PM(4).jpeg",
+    "targetFolder": "b-gastronomie-locala",
+    "baseName": "01-platou-branza-praz",
+    "width": 960,
+    "height": 720,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM(5).jpeg",
+    "targetFolder": "b-gastronomie-locala",
+    "baseName": "02-carnati-afumaturi-casa",
+    "width": 960,
+    "height": 720,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM(1).jpeg",
+    "targetFolder": "c-personalitate-locala",
+    "baseName": "01-festivalul-maria-apostol-runcu",
+    "width": 1600,
+    "height": 1200,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.37 PM.jpeg",
+    "targetFolder": "c-personalitate-locala",
+    "baseName": "02-monument-maria-apostol-runcu",
+    "width": 1536,
+    "height": 2048,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "10.jpg",
+    "targetFolder": "d-poveste-comunitate",
+    "baseName": "09-constructie-lemn-sepia",
+    "width": 1600,
+    "height": 2385,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM.jpeg",
+    "targetFolder": "d-poveste-comunitate",
+    "baseName": "02-arhiva-gospodarie-car-boi",
+    "width": 1600,
+    "height": 1133,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM(1).jpeg",
+    "targetFolder": "d-poveste-comunitate",
+    "baseName": "03-arhiva-sarbatoare-cerdac",
+    "width": 1415,
+    "height": 2048,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  },
+  {
+    "inboxFile": "Traditi/WhatsApp Image 2026-11-03 at 3.09.39 PM(2).jpeg",
+    "targetFolder": "d-poveste-comunitate",
+    "baseName": "04-arhiva-car-cu-fan",
+    "width": 1422,
+    "height": 2048,
+    "hadInputExif": false,
+    "outputExifStripped": true
+  }
+]
