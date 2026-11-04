@@ -152,15 +152,6 @@
             <svg class="sound-icon-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
             <span>Sunet</span>
           </button>
-          <button
-            type="button"
-            class="btn-glass-pill"
-            data-open-modal="qr"
-            aria-label="Afișează codul QR pentru scanare"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
-            <span>Scanează QR</span>
-          </button>
         </div>
       </header>
 
@@ -241,9 +232,9 @@
           <li class="intro-cat-item"><span class="intro-cat-dot" style="background: var(--cat-d)"></span><strong>Poveștile comunității</strong></li>
         </ul>
         <p class="intro-credit">
-          Realizat de <strong>Sacagiu Eduard, Denisa Caramete, Ana Udroiu și Alex Stoika</strong>
+          Realizat de <strong>Sacagiu Eduard Marian, Caramete Maria Denisa, Ana Maria Ștefania Udroiu și Alexandru Daniel Stoichin</strong>
           <span class="intro-credit__sep" aria-hidden="true">·</span>
-          Coordonator: <strong>prof. Popescu Flori</strong>
+          Coordonator: <strong>prof. Popescu Flori Alina</strong>
         </p>
       </footer>
     </section>
@@ -352,16 +343,6 @@
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span>Tur ghidat</span>
-            </button>
-
-            <button
-              type="button"
-              class="btn-hud-pill"
-              data-open-modal="qr"
-              title="Ecran Scanează și explorează (Cod QR)"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
-              <span class="hide-sm">QR</span>
             </button>
 
             <button
@@ -715,63 +696,7 @@
       </footer>
     </div>
 
-    <!-- 8A. MODAL „SCANEAZĂ ȘI EXPLOREAZĂ” (QR CODE) -->
-    <div
-      id="qr-modal"
-      class="modal-overlay"
-      hidden
-      aria-hidden="true"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="qr-modal-title"
-    >
-      <div class="modal-card modal-card--qr">
-        <button
-          type="button"
-          class="btn-icon-circle modal-close-btn"
-          data-close-modal
-          aria-label="Închide fereastra QR"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
-        </button>
-
-        <div class="modal-eyebrow">Lider European 2026 • Acces Public</div>
-        <h2 id="qr-modal-title" class="modal-title">Scanează și explorează</h2>
-        <p id="qr-status-note" class="modal-subtitle">
-          Deschide harta interactivă a comunei Runcu (jud. Gorj) direct pe telefonul tău.
-        </p>
-
-        <div id="qr-render-box" class="qr-render-box"></div>
-
-        <div class="qr-url-pill">
-          <span id="qr-url-display">URL final după deploy</span>
-        </div>
-
-        <div class="qr-config-bar">
-          <input
-            type="url"
-            id="qr-custom-url-input"
-            class="qr-url-input"
-            placeholder="https://exemplu.netlify.app (URL public final)"
-            aria-label="URL public final pentru generarea codului QR"
-          />
-          <button type="button" id="qr-apply-url-btn" class="btn-primary">
-            Generează QR
-          </button>
-        </div>
-
-        <div class="qr-download-actions">
-          <button type="button" id="qr-download-svg" class="btn-secondary" disabled>
-            Descarcă QR Vectorial (SVG)
-          </button>
-          <button type="button" id="qr-download-png" class="btn-secondary" disabled>
-            Descarcă QR Înaltă Rezoluție (PNG 2048px)
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 8B. MODAL FINAL „MULȚUMIM” (TEAM & LOGOS PLACEHOLDER) -->
+    <!-- 8A. MODAL FINAL „MULȚUMIM” (TEAM & LOGOS) -->
     <div
       id="thanks-modal"
       class="modal-overlay"
@@ -803,11 +728,11 @@
           <div class="thanks-block">
             <h3>Echipa de proiect</h3>
             <ul class="thanks-list">
-              <li><span class="thanks-list__role">Membru 1</span><strong>Sacagiu Eduard</strong></li>
-              <li><span class="thanks-list__role">Membru 2</span><strong>Denisa Caramete</strong></li>
-              <li><span class="thanks-list__role">Membru 3</span><strong>Ana Udroiu</strong></li>
-              <li><span class="thanks-list__role">Membru 4</span><strong>Alex Stoika</strong></li>
-              <li class="thanks-list__coord"><span class="thanks-list__role">Profesor coordonator</span><strong>Popescu Flori</strong></li>
+              <li><span class="thanks-list__role">Membru 1</span><strong>Sacagiu Eduard Marian</strong></li>
+              <li><span class="thanks-list__role">Membru 2</span><strong>Caramete Maria Denisa</strong></li>
+              <li><span class="thanks-list__role">Membru 3</span><strong>Ana Maria Ștefania Udroiu</strong></li>
+              <li><span class="thanks-list__role">Membru 4</span><strong>Alexandru Daniel Stoichin</strong></li>
+              <li class="thanks-list__coord"><span class="thanks-list__role">Profesor coordonator</span><strong>Popescu Flori Alina</strong></li>
             </ul>
           </div>
 
@@ -840,13 +765,6 @@
         </div>
 
         <div class="modal-footer-actions">
-          <button
-            type="button"
-            class="btn-secondary"
-            data-open-modal="qr"
-          >
-            Vezi Codul QR
-          </button>
           <button type="button" class="btn-primary" data-close-modal>
             Continuă explorarea hărții
           </button>
