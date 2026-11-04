@@ -207,7 +207,7 @@ const LOGO_MAPPING = [
     baseName: 'stema-comuna-runcu'
   },
   {
-    inboxFile: path.join('Logouri', 'LOGO LICEUL TEHNOLOGIC BALTA.jpg'),
+    inboxFile: path.join('Logouri', 'LOGO LICEUL TEHNOLOGIC BALTA.png'),
     targetFolder: 'logos',
     baseName: 'liceul-tehnologic-balta'
   }

@@ -315,8 +315,6 @@ button {
 
 .intro-logo--school {
   height: 54px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(229, 169, 60, 0.4);
 }
 
 .intro-logos__divider {
@@ -927,7 +925,6 @@ body.is-hud-hidden .hud-element {
 
 .hud-brand__logo--school {
   height: 32px;
-  border-radius: 50%;
 }
 
 .hud-brand__titles {
@@ -2499,7 +2496,7 @@ body.is-hud-hidden .hud-element {
 }
 
 .thanks-logo-img--school {
-  border-radius: 50%;
+  height: 64px;
 }
 
 .thanks-list li {
