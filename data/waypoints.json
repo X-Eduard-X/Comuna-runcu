@@ -10,10 +10,10 @@
       "srcsetWebp": "assets/photos/intro-cover/cover-runcu-gorj-480w.webp 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.webp 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.webp 1600w",
       "srcsetAvif": "assets/photos/intro-cover/cover-runcu-gorj-480w.avif 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.avif 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.avif 1600w",
       "fallback": "assets/photos/intro-cover/cover-runcu-gorj.jpg",
-      "width": 1600,
-      "height": 2143,
-      "alt": "Totem iluminat nocturn cu stema, steagurile României și Uniunii Europene și inscripția Runcu, Bine ați venit, Județul Gorj",
-      "caption": "Runcu, județul Gorj"
+      "width": 1024,
+      "height": 765,
+      "alt": "Sediul Primăriei Comunei Runcu și Consiliului Local, împodobit cu drapelul tricolor și stema comunei",
+      "caption": "Primăria Comunei Runcu"
     }
   },
   "categories": {
@@ -593,10 +593,10 @@
           "consent": true
         },
         {
-          "src": "assets/photos/intro-cover/cover-runcu-gorj.webp",
-          "srcsetWebp": "assets/photos/intro-cover/cover-runcu-gorj-480w.webp 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.webp 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.webp 1600w",
-          "srcsetAvif": "assets/photos/intro-cover/cover-runcu-gorj-480w.avif 480w, assets/photos/intro-cover/cover-runcu-gorj-960w.avif 960w, assets/photos/intro-cover/cover-runcu-gorj-1600w.avif 1600w",
-          "fallback": "assets/photos/intro-cover/cover-runcu-gorj.jpg",
+          "src": "assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu.webp",
+          "srcsetWebp": "assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-480w.webp 480w, assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-960w.webp 960w, assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-1600w.webp 1600w",
+          "srcsetAvif": "assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-480w.avif 480w, assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-960w.avif 960w, assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu-1600w.avif 1600w",
+          "fallback": "assets/photos/d-rachiti-troite-lemn/03-totem-intrare-runcu.jpg",
           "width": 1600,
           "height": 2143,
           "alt": "Totem iluminat nocturn cu stema, steagurile României și Uniunii Europene și inscripția Runcu, Bine ați venit, Județul Gorj",

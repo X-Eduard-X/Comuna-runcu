@@ -31,6 +31,11 @@ const PHOTO_MAPPING = [
     targetFolder: 'd-rachiti-troite-lemn',
     baseName: '02-troita-lemn-vie-2023'
   },
+  {
+    inboxFile: '5-totem-runcu-vechi.jpg',
+    targetFolder: 'd-rachiti-troite-lemn',
+    baseName: '03-totem-intrare-runcu'
+  },
 
   // Cat. A — Cheile Sohodolului (3 photos)
   {

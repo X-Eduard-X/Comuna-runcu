@@ -78,7 +78,7 @@ async function run() {
     console.log('[OK] Captured v7-02-hud-brand-new-logo.png');
 
     // 4. Click info button to open "Vă mulțumim!" modal
-    await page.click('[data-open-modal="thanks"]');
+    await page.click('[data-open-modal="thanks"]', { noWaitAfter: true });
     await page.waitForTimeout(600);
 
     const thanksCard = page.locator('#thanks-modal .modal-card');
@@ -89,7 +89,7 @@ async function run() {
 
     // Also mobile view of intro
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto('http://localhost:4178');
+    await page.goto('http://localhost:4178', { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(1000);
     const mobileTopbar = page.locator('.intro-topbar');
     await mobileTopbar.screenshot({
